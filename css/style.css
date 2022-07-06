@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mochiy+Pop+P+One&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-h1 {
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+/* navbar start here */
+.small1 {
+    font-size: 18px;
+    margin-top: 11px;
+    padding: 0px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-style: italic;
+}
+
+.custom-bg {
+    background: #3AF966;
+
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* navbar end here */
+
+
+/* homepage start here */
+.main::before {
+    content: "";
+    position: absolute;
+    background: url("../img/home-page.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: bolder;
+}
+
+.color {
+    color: #3AF966;
+}
+
+.background {
+    background: #3AF966;
+}
+
+p {
+    font-size: 17px;
+    line-height: normal;
+}
+
+.custom-button {
+    background: #3AF966;
+    border: 1px solid #3AF966;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 3px;
+}
+
+/* homepage end here */
+
+
+/* services demo start here */
+.service-demo-bg {
+    background: #ddd;
+}
+
+/* services demo end here */
+
+
+/* main services section start here */
+.number1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: start;
+}
+
+.number2 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: end;
+}
+
+.custom-border-style {
+    border: 1px solid black;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+/* main services section end here */
+
+/* portfolio section start here */
+.border-custom {
+    border-bottom: 5px solid green;
+    width: 25%;
+    margin: auto;
+}
+
+.border-custom1 {
+    border-bottom: 3px solid green;
+    width: 10%;
+    margin: auto;
+}
+
+/* portfolio section end here */
+
+
+/* pricing section start here */
+.pricingtable {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 50px 50px 15px 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: #292929;
+    perspective: 700px;
+    z-index: 1;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    background: #ddd;
+    border: 5px solid #3AF966;
+    color: black;
+    border-radius: 25%;
+}
+
+.pricingtable:hover {
+    color: white;
+
+}
+
+.pricingtable::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f80c31;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transform: rotateY(70deg);
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 9%;
+}
+
+.pricingtable:hover::after {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.pricingtable .icon {
+    width: 69px;
+    height: 69px;
+    line-height: 69px;
+    border-radius: 50%;
+    border: none;
+    background-color: #3AF966;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    font-weight: 900;
+}
+
+
+
+.pricingtable .pricingtable-header {
+    margin-bottom: 30px;
+}
+
+.pricingtable .title {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+
+}
+
+.pricingtable:hover .title {
+    color: white;
+}
+
+.pricingtable .price-value {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out 0s;
+
+
+}
+
+.pricingtable:hover .price-value {
+    border-bottom-color: white;
+    color: white;
+}
+
+.pricingtable .pricing-content {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.pricingtable .pricing-content li {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    padding-top: 10px;
+
+}
+
+.pricingtable .white-border li {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    padding-top: 10px;
+
+}
+
+
+/* pricing section end here */
+
+
+/* news letter section start here */
+
+
+
+/* news letter section end here */
+
+
+/* contact section start here */
+
+.input-border {
+    border: 1px solid #3AF966;
+}
+
+.bg-ddd {
+    background: #ddd;
+}
+
+.contact-button {
+    padding: 5px 30px 5px 30px;
+}
+
+.contact-form-padding {
+    padding: 5px;
+}
+
+/* contact section end here */
+
+/* footer */
+.footer-logo-part {
+    margin: auto;
+    display: block;
+    width: 138px;
+}
+
+.addres {
+    border-bottom: 1px solid white;
+
+}
+
+.footer-icon i {
+    background: black;
+    color: #3AF966;
+    border: 1px solid #3AF966;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 100%;
+
+}
+
+.copyright-part {
+    background: #3AF966;
+}
+
+/* footer */
+
+
+@media (max-width: 992px) {
+    .main-responsive {
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-custom {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100% !important;
+    }
+
+    .another-responsive {
+        display: flex !important;
+        flex-direction: row !important;
+        width: 223px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .input-res {
+        width: 100%;
+    }
+
+    .nav-button {
+        display: inline !important;
+        margin: 5px;
+    }
+}
